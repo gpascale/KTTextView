@@ -62,6 +62,7 @@
    [placeholder setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
    [placeholder setTextColor:[UIColor lightGrayColor]];
    [placeholder setText:@""];
+   [placeholder setFont:self.font];
    [self addSubview:placeholder];
    [self sendSubviewToBack:placeholder];
    
@@ -112,7 +113,7 @@
 
 - (void)getFocus:(NSNotification *)notification
 {
-    [_placeholder setAlpha:0.0];
+    //[_placeholder setAlpha:0.0];
 }
 
 - (void)lostFocus:(NSNotification *)notification
